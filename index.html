@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:"Ubuntu";
+        
+    }
+</style>
+<body>
+    <script>
+        var redBox = document.createElement('marquee');
+            redBox.style.backgroundColor="red";
+            redBox.innerHTML="*FREE SHIPPING ALL OVER INDIA | 100% SECURE PAYMENTS | 14 DAYS MONEY BACK GUARENTEEE | EASY RETURNS"
+            redBox.style.padding="7px 0px";
+            redBox.style.fontSize="13px";
+            redBox.style.color='white';
+            document.body.append(redBox);
+        
+        var navbarr=document.createElement('div');
+            navbarr.style.backgroundColor="white";
+            navbarr.style.display='flex';
+            navbarr.style.justifyContent='space-between';
+            navbarr.style.alignItems='center';
+            navbarr.style.paddingLeft='40px';
+             navbarr.style.paddingTop='20px'
+            navbarr.classList.add('navbar','sticky-top');
+            // navbarr.style.border='2px solid green';
+            document.body.append(navbarr);
+
+        var logoAndButtons=document.createElement('div');
+            navbarr.append(logoAndButtons);
+            // logoAndButtons.style.border='2px solid green';
+            logoAndButtons.style.display='flex';
+            logoAndButtons.style.alignItems='center';
+            logoAndButtons.style.gap='40px';
+        
+        var navbarrLogo=document.createElement('div');
+            // navbarrLogo.style.border='2px solid red';
+            navbarrLogo.style.width='200px';
+            navbarrLogo.style.height='100%';
+            logoAndButtons.append(navbarrLogo);
+
+        var logo=document.createElement('img');
+            logo.setAttribute('src','./images/sheemati-logo.png');
+            logo.style.width='100%';
+            logo.style.height='100%';
+        navbarrLogo.append(logo)
+
+        var hoverButtons=document.createElement('div');
+            // hoverButtons.style.border='2px solid red';
+            hoverButtons.style.width='500px';
+            hoverButtons.style.height='100%';
+             hoverButtons.style.display='flex';
+              hoverButtons.style.fontSize='13px'
+            logoAndButtons.append(hoverButtons)
+
+        
+        var arrivalButton=document.createElement('div');
+            // arrivalButton.style.border='2px solid green';
+            arrivalButton.style.width='100%';
+            arrivalButton.style.height='100%';
+            arrivalButton.innerHTML='NEW ARRIVAL'
+            hoverButtons.append( arrivalButton);
+        
+        var catergoryButton=document.createElement('div');
+            // catergoryButton.style.border='2px solid green';
+            catergoryButton.style.width='100%';
+            catergoryButton.style.height='100%';
+            catergoryButton.innerHTML='SHOP BY CATEGORY'
+            hoverButtons.append( catergoryButton);
+
+        var fabricButton=document.createElement('div');
+            // fabricButton.style.border='2px solid green';
+            fabricButton.style.width='100%';
+            fabricButton.style.height='100%';
+            fabricButton.innerHTML='SHOP BY FABRIC'
+            hoverButtons.append( fabricButton);
+
+         var navbarrRight = document.createElement('div');
+             navbarrRight.style.border='2px solid blue';
+             navbarrRight.style.width='260px';
+            navbarrRight.style.height='40px';
+            navbarr.append(navbarrRight);
+
+        var hero=document.createElement('div');
+            hero.style.display='flex';
+            hero.style.justifyContent='center';
+            hero.style.paddingTop='51px';
+
+            document.body.append(hero);
+
+        var mainImage=document.createElement('img');
+            mainImage.setAttribute('src','./images/main-img.webp');
+            mainImage.style.width='85%'
+            mainImage.style.height='63vh'
+            hero.append(mainImage);
+
+        var div2=document.createElement('div');
+            // div2.style.border='2px solid green';
+            div2.style.display='flex';
+            div2.style.justifyContent='center';
+
+            document.body.append(div2)
+   
+        var sareeTypesDiv=document.createElement('div');
+            sareeTypesDiv.style.display='flex';
+            sareeTypesDiv.style.gap='5px'
+            sareeTypesDiv.style.paddingTop='55px'
+            // sareeTypes.style.justifyContent='center';
+            sareeTypesDiv.style.width='85%';
+            sareeTypesDiv.style.border='2px solid red';
+            div2.append(sareeTypesDiv);
+         
+
+        var sareeImgDives=document.createElement('div');
+            sareeImgDives.style.height='40vh';
+            //  sareeImgDives.style.border='2px solid black';
+             sareeImgDives.style.width='calc(100% / 6)';
+            sareeTypesDiv.append( sareeImgDives);
+
+        var sareeImgDives1=document.createElement('div');
+            sareeImgDives1.style.height='40vh';
+            // sareeImgDives1.style.border='2px solid black';
+            sareeImgDives1.style.width='calc(100% / 6)';
+            sareeTypesDiv.append( sareeImgDives1);
+
+         var sareeImgDives2=document.createElement('div');
+            sareeImgDives2.style.height='40vh';
+            // sareeImgDives2.style.border='2px solid black';
+            sareeImgDives2.style.width='calc(100% / 6)';
+            sareeTypesDiv.append( sareeImgDives2);
+        
+         var sareeImgDives3=document.createElement('div');
+            sareeImgDives3.style.height='40vh';
+            // sareeImgDives3.style.border='2px solid black';
+            sareeImgDives3.style.width='calc(100% / 6)';
+            sareeTypesDiv.append( sareeImgDives3);
+
+         var sareeImgDives4=document.createElement('div');
+            sareeImgDives4.style.height='40vh';
+            // sareeImgDives4.style.border='2px solid black';
+            sareeImgDives4.style.width='calc(100% / 6)';
+            sareeTypesDiv.append( sareeImgDives4);
+
+         var sareeImgDives5=document.createElement('div');
+             sareeImgDives5.style.height='40vh';
+            //  sareeImgDives5.style.border='2px solid black';
+             sareeImgDives5.style.width='calc(100% / 6)';
+             sareeTypesDiv.append( sareeImgDives5);
+
+        var sareeTypes=document.createElement('img');
+            sareeTypes.setAttribute('src','./images/saree.webp');
+            sareeTypes.style.width='100%'
+            sareeTypes.style.height="100%"
+            sareeImgDives.append(sareeTypes);
+
+         var sareeTypes1=document.createElement('img');
+            sareeTypes1.setAttribute('src','./images/2.webp');
+            sareeTypes.style.width='100%'
+            sareeTypes1.style.height="100%"
+            sareeImgDives1.append(sareeTypes1);
+
+         var sareeTypes2=document.createElement('img');
+            sareeTypes2.setAttribute('src','./images/3.webp');
+            sareeTypes.style.width='100%';
+            sareeTypes2.style.height="100%"
+            sareeImgDives2.append(sareeTypes2);
+
+         var sareeTypes3=document.createElement('img');
+            sareeTypes3.setAttribute('src','./images/4.webp');
+            sareeTypes.style.width='100%'
+            sareeTypes3.style.height="100%"
+            sareeImgDives3.append(sareeTypes3);
+
+         var sareeTypes4=document.createElement('img');
+            sareeTypes4.setAttribute('src','./images/5.webp');
+            sareeTypes.style.width='100%'
+            sareeTypes4.style.height="100%"
+            sareeImgDives4.append(sareeTypes4);
+
+         var sareeTypes5=document.createElement('img');
+            sareeTypes5.setAttribute('src','./images/6.webp');
+            sareeTypes.style.width='100%'
+            sareeTypes5.style.height="100%"
+            sareeImgDives5.append(sareeTypes5);
+
+        var occasionHeadingDiv=document.createElement('div');
+            // occasionHeadingDiv.style.border='2px solid red';
+            occasionHeadingDiv.innerHTML='SUITABLE FOR EVERY OCASSION';
+            occasionHeadingDiv.style.textAlign='center';
+            occasionHeadingDiv.style.color='red';
+            occasionHeadingDiv.style.paddingTop='70px'
+             document.body.append(occasionHeadingDiv);
+
+        var carryCharmHeadingDiv=document.createElement('div');
+            // carryCharmHeadingDiv.style.border='2px solid red';
+            carryCharmHeadingDiv.innerHTML='<h2>Carry Charm Wherever You Go</h2>';
+            carryCharmHeadingDiv.style.textAlign='center';
+            carryCharmHeadingDiv.style.paddingTop='10px'
+            document.body.append(carryCharmHeadingDiv);
+
+        var shopNowDiv=document.createElement('div');
+            shopNowDiv.style.display='flex';
+             shopNowDiv.style.paddingTop='50px'
+            shopNowDiv.style.justifyContent='center';
+            document.body.append(shopNowDiv);
+
+        var shopNowImgDiv=document.createElement('div');
+            shopNowImgDiv.style.display='flex';
+            shopNowImgDiv.style.gap='15px'
+            // shopNowImgDiv.style.paddingTop='55px'
+            // sareeTypes.style.justifyContent='center';
+            shopNowImgDiv.style.width='85%';
+            shopNowDiv.append(shopNowImgDiv);
+         
+        var shopNowImg1=document.createElement('div');
+             shopNowImg1.style.width='calc(100% / 4)';
+            shopNowImgDiv.append( shopNowImg1);
+        
+        var shopNowImg2=document.createElement('div');
+             shopNowImg2.style.width='calc(100% / 4)';
+            shopNowImgDiv.append( shopNowImg2);
+        
+        var shopNowImg3=document.createElement('div');
+             shopNowImg3.style.width='calc(100% / 4)';
+            shopNowImgDiv.append( shopNowImg3);
+        
+        var shopNowImg4=document.createElement('div');
+             shopNowImg4.style.width='calc(100% / 4)';
+            shopNowImgDiv.append( shopNowImg4);
+        
+        var celebritywear=document.createElement('img');
+            celebritywear.setAttribute('src','./images/celebrationwear.webp');
+            celebritywear.style.width='100%'
+            celebritywear.style.height="100%"
+            shopNowImg1.append(celebritywear);
+
+         var cozyCasual=document.createElement('img');
+            cozyCasual.setAttribute('src','./images/cozycasual.webp');
+            cozyCasual.style.width='100%'
+            cozyCasual.style.height="100%"
+            shopNowImg2.append(cozyCasual);
+
+         var partyEssential=document.createElement('img');
+            partyEssential.setAttribute('src','./images/partyessential.webp');
+            partyEssential.style.width='100%'
+            partyEssential.style.height="100%"
+            shopNowImg3.append(partyEssential);
+
+         var weddingWear=document.createElement('img');
+            weddingWear.setAttribute('src','./images/weddingwear.webp');
+            weddingWear.style.width='100%'
+            weddingWear.style.height="100%"
+            shopNowImg4.append(weddingWear);
+
+        //shop now section
+ 
+        var shopNowHeading=document.createElement('div');
+      
+            shopNowHeading.innerHTML='SHOP NOW';
+            shopNowHeading.style.textAlign='center';
+            shopNowHeading.style.color='red';
+            shopNowHeading.style.paddingTop='70px'
+             document.body.append(shopNowHeading);
+
+        var stayOnBudgetHeading=document.createElement('div');
+            // stayOnBudgetHeading.style.border='2px solid red';
+            stayOnBudgetHeading.innerHTML='<h2>Stay on Budget,Shop in Style!</h2>';
+            stayOnBudgetHeading.style.textAlign='center';
+            stayOnBudgetHeading.style.paddingTop='10px'
+            document.body.append(stayOnBudgetHeading);
+    
+        //IMG SECTION
+
+        var rateCategory=document.createElement('div');
+            rateCategory.style.display='flex';
+             rateCategory.style.paddingTop='50px'
+            rateCategory.style.justifyContent='center';
+            document.body.append(rateCategory);
+
+        var rateCategoryImgDiv=document.createElement('div');
+            rateCategoryImgDiv.style.display='flex';
+            rateCategoryImgDiv.style.gap='15px'
+            // rateCategoryImgDiv.style.paddingTop='55px'
+            // rateCategoryImgDiv.style.justifyContent='center';
+            rateCategoryImgDiv.style.width='85%';
+            rateCategory.append(rateCategoryImgDiv);
+
+        var under2000=document.createElement('div');
+            under2000.style.width='calc(100% / 6)';
+            rateCategoryImgDiv.append( under2000);
+        
+        var under4000=document.createElement('div');
+            under4000.style.width='calc(100% / 6)';
+            rateCategoryImgDiv.append( under4000);
+
+        var under6000=document.createElement('div');
+            under6000.style.width='calc(100% / 6)';
+            rateCategoryImgDiv.append( under6000);
+
+        var under10000=document.createElement('div');
+            under10000.style.width='calc(100% / 6)';
+            rateCategoryImgDiv.append( under10000);
+
+        var under15000=document.createElement('div');
+            under15000.style.width='calc(100% / 6)';
+            rateCategoryImgDiv.append( under15000);
+
+        var above15000=document.createElement('div');
+            above15000.style.width='calc(100% / 6)';
+            rateCategoryImgDiv.append( above15000);
+
+        var below2000=document.createElement('img');
+            below2000.setAttribute('src','./images/2000.png');
+            below2000.style.width='100%'
+            below2000.style.height="100%"
+            under2000.append(below2000);
+
+         var below4000=document.createElement('img');
+            below4000.setAttribute('src','./images/4000.png');
+            below4000.style.width='100%'
+            below4000.style.height="100%"
+            under4000.append(below4000);
+
+         var below6000=document.createElement('img');
+            below6000.setAttribute('src','./images/6000.png');
+            below6000.style.width='100%'
+            below6000.style.height="100%"
+            under6000.append(below6000);
+
+         var below10000=document.createElement('img');
+            below10000.setAttribute('src','./images/10000.png');
+            below10000.style.width='100%'
+            below10000.style.height="100%"
+            under10000.append(below10000);
+
+         var below15000=document.createElement('img');
+            below15000.setAttribute('src','./images/15000.png');
+            below15000.style.width='100%'
+            below15000.style.height="100%"
+            under15000.append(below15000);
+
+         var above16000=document.createElement('img');
+            above16000.setAttribute('src','./images/160000.webp');
+            above16000.style.width='100%'
+            above16000.style.height="100%"
+            above15000.append(above16000);
+
+        //next section
+
+        var featuredCategoryDiv=document.createElement('div');
+      
+            featuredCategoryDiv.innerHTML='FEATURED CATEGORIES';
+            featuredCategoryDiv.style.textAlign='center';
+            featuredCategoryDiv.style.color='red';
+            featuredCategoryDiv.style.paddingTop='70px'
+            document.body.append(featuredCategoryDiv);
+
+        var featuredCategoryDivHeading=document.createElement('div');
+            // stayOnBudgetHeading.style.border='2px solid red';
+            featuredCategoryDivHeading.innerHTML='<h2>Celebratory Collection of Festive Outfits</h2>';
+            featuredCategoryDivHeading.style.textAlign='center';
+            featuredCategoryDivHeading.style.paddingTop='10px'
+            document.body.append(featuredCategoryDivHeading);
+//...
+        var festiveOutfitsDiv=document.createElement('div');
+            // festiveOutfitsDiv.style.border='2px solid lime';
+             festiveOutfitsDiv.style.paddingTop='50px'
+            festiveOutfitsDiv.style.display='flex';
+            festiveOutfitsDiv.style.flexDirection='column'
+            festiveOutfitsDiv.style.justifyContent='center'
+             festiveOutfitsDiv.style.gap='30px'
+            festiveOutfitsDiv.style.alignItems='center'
+            document.body.append(festiveOutfitsDiv);
+            
+        var festiveOutfitsImgDiv=document.createElement('div');
+            // festiveOutfitsImgDiv.style.border='2px solid red';
+            festiveOutfitsImgDiv.style.display='flex'
+            festiveOutfitsImgDiv.style.gap='20px'
+            festiveOutfitsImgDiv.style.width='85%';
+            //  festiveOutfitsImgDiv.style.height='20vh'
+            festiveOutfitsDiv.append(festiveOutfitsImgDiv);
+
+        var festiveOutfitsImg1Div=document.createElement('div');
+            // festiveOutfitsImg1Div.style.border='2px solid lime'
+             festiveOutfitsImgDiv.append(festiveOutfitsImg1Div);
+
+        var festiveOutfitsImg1=document.createElement('img');
+            festiveOutfitsImg1.setAttribute('src','images/featured-category-img/1.webp');
+            festiveOutfitsImg1Div.append(festiveOutfitsImg1);
+            
+         var festiveOutfitsImg2=document.createElement('img');
+            festiveOutfitsImg2.setAttribute('src','images/featured-category-img/2.webp');
+            festiveOutfitsImgDiv.append(festiveOutfitsImg2);
+
+         var festiveOutfitsImg3=document.createElement('img');
+            festiveOutfitsImg3.setAttribute('src','images/featured-category-img/3.webp');
+            festiveOutfitsImgDiv.append(festiveOutfitsImg3);
+        
+         var festiveOutfitsImg4=document.createElement('img');
+            festiveOutfitsImg4.setAttribute('src','images/featured-category-img/4.webp');
+            festiveOutfitsImgDiv.append(festiveOutfitsImg4);
+           
+        var festiveOutfitsImgDiv2=document.createElement('div');
+            // festiveOutfitsImgDiv2.style.border='2px solid lime';
+            festiveOutfitsImgDiv2.style.width='85%';
+             festiveOutfitsImgDiv2.style.display='flex'
+            festiveOutfitsImgDiv2.style.gap='20px'
+            //  festiveOutfitsImgDiv2.style.height='20vh'
+             festiveOutfitsDiv.append(festiveOutfitsImgDiv2);
+
+         var festiveOutfitsImg5=document.createElement('img');
+            festiveOutfitsImg5.setAttribute('src','images/featured-category-img/5.webp');
+            festiveOutfitsImgDiv2.append(festiveOutfitsImg5);
+
+         var festiveOutfitsImg6=document.createElement('img');
+            festiveOutfitsImg6.setAttribute('src','images/featured-category-img/6.webp');
+            festiveOutfitsImgDiv2.append(festiveOutfitsImg6);
+        
+         var festiveOutfitsImg7=document.createElement('img');
+            festiveOutfitsImg7.setAttribute('src','images/featured-category-img/7.webp');
+            festiveOutfitsImgDiv2.append(festiveOutfitsImg7);
+
+         var festiveOutfitsImg8=document.createElement('img');
+            festiveOutfitsImg8.setAttribute('src','images/featured-category-img/8.webp');
+            festiveOutfitsImgDiv2.append(festiveOutfitsImg8);
+
+        var festiveOutfitsImgDiv3=document.createElement('div');
+            // festiveOutfitsImgDiv3.style.border='2px solid yellow';
+            festiveOutfitsImgDiv3.style.width='85%';
+            festiveOutfitsImgDiv3.style.display='flex'
+            festiveOutfitsImgDiv3.style.gap='20px'
+            festiveOutfitsDiv.append(festiveOutfitsImgDiv3);
+
+         var festiveOutfitsImg9=document.createElement('img');
+            festiveOutfitsImg9.setAttribute('src','images/featured-category-img/9.webp');
+            festiveOutfitsImgDiv3.append(festiveOutfitsImg9);
+
+         var festiveOutfitsImg5=document.createElement('img');
+            festiveOutfitsImg5.setAttribute('src','images/featured-category-img/10.webp');
+            festiveOutfitsImgDiv3.append(festiveOutfitsImg5);
+        
+         var festiveOutfitsImg5=document.createElement('img');
+            festiveOutfitsImg5.setAttribute('src','images/featured-category-img/11.webp');
+            festiveOutfitsImgDiv3.append(festiveOutfitsImg5);
+        
+         var festiveOutfitsImg5=document.createElement('img');
+            festiveOutfitsImg5.setAttribute('src','images/featured-category-img/12.webp');
+            festiveOutfitsImgDiv3.append(festiveOutfitsImg5);
+
+        var weavesDiv=document.createElement('div');
+            weavesDiv.style.display='flex';
+            weavesDiv.style.justifyContent='center'
+            weavesDiv.style.alignItems='center'
+              weavesDiv.style.paddingTop='150px'
+            document.body.append(weavesDiv);
+
+        var weavesDiv2=document.createElement('div');
+            weavesDiv2.style.width='85%';
+            weavesDiv2.style.display='flex';
+            weavesDiv2.style.gap='30px'
+            weavesDiv.append(weavesDiv2);
+        
+        var weavesImg=document.createElement('img');
+            weavesImg.setAttribute('src','images/New folder/img1.webp')
+            weavesDiv2.append(weavesImg);
+
+         var weavesImg2=document.createElement('img');
+            weavesImg2.setAttribute('src','images/New folder/2.webp')
+            weavesDiv2.append(weavesImg2);
+
+        
+        //next section
+
+        var shadesOfHappinessDiv=document.createElement('div');
+      
+            shadesOfHappinessDiv.innerHTML='SHADES OF HAPPINESS';
+            shadesOfHappinessDiv.style.textAlign='center';
+            shadesOfHappinessDiv.style.color='red';
+            shadesOfHappinessDiv.style.paddingTop='70px'
+            document.body.append(shadesOfHappinessDiv);
+
+        var shadesOfHappinessDivHeading=document.createElement('div');
+            // stayOnBudgetHeading.style.border='2px solid red';
+            shadesOfHappinessDivHeading.innerHTML='<h2>Checkout Our Galore Of Collections</h2>';
+            shadesOfHappinessDivHeading.style.textAlign='center';
+            shadesOfHappinessDivHeading.style.paddingTop='10px'
+            document.body.append(shadesOfHappinessDivHeading);
+
+        //JJDEJ
+
+        var rectangleMainDiv=document.createElement('div');
+            rectangleMainDiv.style.display='flex';
+            rectangleMainDiv.style.paddingTop='30px'
+            rectangleMainDiv.style.justifyContent='center'
+            document.body.append(rectangleMainDiv);
+
+        var rectangleDiv=document.createElement('div');
+            rectangleDiv.style.width="85%";
+            rectangleDiv.style.display='flex';
+            rectangleDiv.style.gap='20px'
+            rectangleDiv.style.border='2px solid red';
+            rectangleMainDiv.append(rectangleDiv);
+
+        var rectangleDivImg=document.createElement('div');
+            rectangleDivImg.style.width='calc(100% / 4)';
+            rectangleDivImg.style.border='2px solid lime';
+            rectangleDiv.append(rectangleDivImg);
+
+        var rectangleDivImges=document.createElement('img');
+            rectangleDivImges.setAttribute('src','images/New folder/3.webp');
+            rectangleDivImges.style.width='100%'
+            rectangleDivImges.style.height='80%'
+            rectangleDivImg.append(rectangleDivImges);
+
+        var rectangleDivImgRateDiv=document.createElement('div');
+            rectangleDivImgRateDiv.style.height='20%'
+            rectangleDivImgRateDiv.style.border='2px solid black';
+            rectangleDivImg.append(rectangleDivImgRateDiv);
+        
+        var paragraph=document.createElement('p');
+            paragraph.innerText="Crepe Saree";
+            paragraph.style.paddingTop='15px'
+            paragraph.style.color='black'
+             paragraph.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph);
+
+        var paragraph2=document.createElement('p');
+            paragraph2.innerText="Cilli Red Semi Crepe Saree";
+            paragraph2.style.color='black'
+             paragraph2.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph2);
+
+         var paragraph3=document.createElement('p');
+            paragraph3.innerText=" ₹1,529.00, now ₹1,376.10";
+            paragraph3.style.fontWeight='bold'
+            paragraph3.style.color='black'
+             paragraph3.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph3);
+
+          var rectangleDivImg=document.createElement('div');
+            rectangleDivImg.style.width='calc(100% / 4)';
+            rectangleDivImg.style.border='2px solid lime';
+            rectangleDiv.append(rectangleDivImg);
+
+        var rectangleDivImges=document.createElement('img');
+            rectangleDivImges.setAttribute('src','images/New folder/4.webp');
+            rectangleDivImges.style.width='100%'
+            rectangleDivImges.style.height='80%'
+            rectangleDivImg.append(rectangleDivImges);
+
+        var rectangleDivImgRateDiv=document.createElement('div');
+            rectangleDivImgRateDiv.style.height='20%'
+            rectangleDivImgRateDiv.style.border='2px solid black';
+            rectangleDivImg.append(rectangleDivImgRateDiv);
+        
+        var paragraph=document.createElement('p');
+            paragraph.innerText="Crepe Saree";
+            paragraph.style.paddingTop='15px'
+            paragraph.style.color='black'
+             paragraph.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph);
+
+        var paragraph2=document.createElement('p');
+            paragraph2.innerText="Cilli Red Semi Crepe Saree";
+            paragraph2.style.color='black'
+             paragraph2.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph2);
+
+         var paragraph3=document.createElement('p');
+            paragraph3.innerText=" ₹1,529.00, now ₹1,376.10";
+            paragraph3.style.fontWeight='bold'
+            paragraph3.style.color='black'
+             paragraph3.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph3);
+
+            //
+         var rectangleDivImg=document.createElement('div');
+            rectangleDivImg.style.width='calc(100% / 4)';
+            rectangleDivImg.style.border='2px solid lime';
+            rectangleDiv.append(rectangleDivImg);
+
+        var rectangleDivImges=document.createElement('img');
+            rectangleDivImges.setAttribute('src','images/New folder/5.webp');
+            rectangleDivImges.style.width='100%'
+            rectangleDivImges.style.height='80%'
+            rectangleDivImg.append(rectangleDivImges);
+
+        var rectangleDivImgRateDiv=document.createElement('div');
+            rectangleDivImgRateDiv.style.height='20%'
+            rectangleDivImgRateDiv.style.border='2px solid black';
+            rectangleDivImg.append(rectangleDivImgRateDiv);
+        
+        var paragraph=document.createElement('p');
+            paragraph.innerText="Crepe Saree";
+            paragraph.style.paddingTop='15px'
+            paragraph.style.color='black'
+             paragraph.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph);
+
+        var paragraph2=document.createElement('p');
+            paragraph2.innerText="Cilli Red Semi Crepe Saree";
+            paragraph2.style.color='black'
+             paragraph2.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph2);
+
+         var paragraph3=document.createElement('p');
+            paragraph3.innerText=" ₹1,529.00, now ₹1,376.10";
+            paragraph3.style.fontWeight='bold'
+            paragraph3.style.color='black'
+             paragraph3.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph3);
+
+            //
+         var rectangleDivImg=document.createElement('div');
+            rectangleDivImg.style.width='calc(100% / 4)';
+            rectangleDivImg.style.border='2px solid lime';
+            rectangleDiv.append(rectangleDivImg);
+
+        var rectangleDivImges=document.createElement('img');
+            rectangleDivImges.setAttribute('src','images/New folder/6.webp');
+            rectangleDivImges.style.width='100%'
+            rectangleDivImges.style.height='80%'
+            rectangleDivImg.append(rectangleDivImges);
+
+        var rectangleDivImgRateDiv=document.createElement('div');
+            rectangleDivImgRateDiv.style.height='20%'
+            rectangleDivImgRateDiv.style.border='2px solid black';
+            rectangleDivImg.append(rectangleDivImgRateDiv);
+        
+        var paragraph=document.createElement('p');
+            paragraph.innerText="Crepe Saree";
+            paragraph.style.paddingTop='15px'
+            paragraph.style.color='black'
+             paragraph.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph);
+
+        var paragraph2=document.createElement('p');
+            paragraph2.innerText="Cilli Red Semi Crepe Saree";
+            paragraph2.style.color='black'
+             paragraph2.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph2);
+
+         var paragraph3=document.createElement('p');
+            paragraph3.innerText=" ₹1,529.00, now ₹1,376.10";
+            paragraph3.style.fontWeight='bold'
+            paragraph3.style.color='black'
+             paragraph3.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph3);
+
+          //next section
+
+        var shadesOfHappinessDiv=document.createElement('div');
+      
+            shadesOfHappinessDiv.innerHTML='SHADES OF HAPPINESS';
+            shadesOfHappinessDiv.style.textAlign='center';
+            shadesOfHappinessDiv.style.color='red';
+            shadesOfHappinessDiv.style.paddingTop='70px'
+            document.body.append(shadesOfHappinessDiv);
+
+        var shadesOfHappinessDivHeading=document.createElement('div');
+            // stayOnBudgetHeading.style.border='2px solid red';
+            shadesOfHappinessDivHeading.innerHTML='<h2>Checkout Our Galore Of Collections</h2>';
+            shadesOfHappinessDivHeading.style.textAlign='center';
+            shadesOfHappinessDivHeading.style.paddingTop='10px'
+            document.body.append(shadesOfHappinessDivHeading);
+
+        //JJDEJ
+
+        var rectangleMainDiv=document.createElement('div');
+            rectangleMainDiv.style.display='flex';
+            rectangleMainDiv.style.paddingTop='30px'
+            rectangleMainDiv.style.justifyContent='center'
+            document.body.append(rectangleMainDiv);
+
+        var rectangleDiv=document.createElement('div');
+            rectangleDiv.style.width="85%";
+            rectangleDiv.style.display='flex';
+            rectangleDiv.style.gap='20px'
+            rectangleDiv.style.border='2px solid red';
+            rectangleMainDiv.append(rectangleDiv);
+
+        var rectangleDivImg=document.createElement('div');
+            rectangleDivImg.style.width='calc(100% / 4)';
+            rectangleDivImg.style.border='2px solid lime';
+            rectangleDiv.append(rectangleDivImg);
+
+        var rectangleDivImges=document.createElement('img');
+            rectangleDivImges.setAttribute('src','images/New folder/9.webp');
+            rectangleDivImges.style.width='100%'
+            rectangleDivImges.style.height='80%'
+            rectangleDivImg.append(rectangleDivImges);
+
+        var rectangleDivImgRateDiv=document.createElement('div');
+            rectangleDivImgRateDiv.style.height='20%'
+            rectangleDivImgRateDiv.style.border='2px solid black';
+            rectangleDivImg.append(rectangleDivImgRateDiv);
+        
+        var paragraph=document.createElement('p');
+            paragraph.innerText="Crepe Saree";
+            paragraph.style.paddingTop='15px'
+            paragraph.style.color='black'
+             paragraph.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph);
+
+        var paragraph2=document.createElement('p');
+            paragraph2.innerText="Cilli Red Semi Crepe Saree";
+            paragraph2.style.color='black'
+             paragraph2.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph2);
+
+         var paragraph3=document.createElement('p');
+            paragraph3.innerText=" ₹1,529.00, now ₹1,376.10";
+            paragraph3.style.fontWeight='bold'
+            paragraph3.style.color='black'
+             paragraph3.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph3);
+
+          var rectangleDivImg=document.createElement('div');
+            rectangleDivImg.style.width='calc(100% / 4)';
+            rectangleDivImg.style.border='2px solid lime';
+            rectangleDiv.append(rectangleDivImg);
+
+        var rectangleDivImges=document.createElement('img');
+            rectangleDivImges.setAttribute('src','images/New folder/10.webp');
+            rectangleDivImges.style.width='100%'
+            rectangleDivImges.style.height='80%'
+            rectangleDivImg.append(rectangleDivImges);
+
+        var rectangleDivImgRateDiv=document.createElement('div');
+            rectangleDivImgRateDiv.style.height='20%'
+            rectangleDivImgRateDiv.style.border='2px solid black';
+            rectangleDivImg.append(rectangleDivImgRateDiv);
+        
+        var paragraph=document.createElement('p');
+            paragraph.innerText="Crepe Saree";
+            paragraph.style.paddingTop='15px'
+            paragraph.style.color='black'
+             paragraph.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph);
+
+        var paragraph2=document.createElement('p');
+            paragraph2.innerText="Cilli Red Semi Crepe Saree";
+            paragraph2.style.color='black'
+             paragraph2.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph2);
+
+         var paragraph3=document.createElement('p');
+            paragraph3.innerText=" ₹1,529.00, now ₹1,376.10";
+            paragraph3.style.fontWeight='bold'
+            paragraph3.style.color='black'
+             paragraph3.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph3);
+
+            //
+         var rectangleDivImg=document.createElement('div');
+            rectangleDivImg.style.width='calc(100% / 4)';
+            rectangleDivImg.style.border='2px solid lime';
+            rectangleDiv.append(rectangleDivImg);
+
+        var rectangleDivImges=document.createElement('img');
+            rectangleDivImges.setAttribute('src','images/New folder/8.jpg');
+            rectangleDivImges.style.width='100%'
+            rectangleDivImges.style.height='80%'
+            rectangleDivImg.append(rectangleDivImges);
+
+        var rectangleDivImgRateDiv=document.createElement('div');
+            rectangleDivImgRateDiv.style.height='20%'
+            rectangleDivImgRateDiv.style.border='2px solid black';
+            rectangleDivImg.append(rectangleDivImgRateDiv);
+        
+        var paragraph=document.createElement('p');
+            paragraph.innerText="Crepe Saree";
+            paragraph.style.paddingTop='15px'
+            paragraph.style.color='black'
+             paragraph.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph);
+
+        var paragraph2=document.createElement('p');
+            paragraph2.innerText="Cilli Red Semi Crepe Saree";
+            paragraph2.style.color='black'
+             paragraph2.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph2);
+
+         var paragraph3=document.createElement('p');
+            paragraph3.innerText=" ₹1,529.00, now ₹1,376.10";
+            paragraph3.style.fontWeight='bold'
+            paragraph3.style.color='black'
+             paragraph3.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph3);
+
+            //
+         var rectangleDivImg=document.createElement('div');
+            rectangleDivImg.style.width='calc(100% / 4)';
+            rectangleDivImg.style.border='2px solid lime';
+            rectangleDiv.append(rectangleDivImg);
+
+        var rectangleDivImges=document.createElement('img');
+            rectangleDivImges.setAttribute('src','images/New folder/7.webp');
+            rectangleDivImges.style.width='100%'
+            rectangleDivImges.style.height='80%'
+            rectangleDivImg.append(rectangleDivImges);
+
+        var rectangleDivImgRateDiv=document.createElement('div');
+            rectangleDivImgRateDiv.style.height='20%'
+            rectangleDivImgRateDiv.style.border='2px solid black';
+            rectangleDivImg.append(rectangleDivImgRateDiv);
+        
+        var paragraph=document.createElement('p');
+            paragraph.innerText="Crepe Saree";
+            paragraph.style.paddingTop='15px'
+            paragraph.style.color='black'
+             paragraph.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph);
+
+        var paragraph2=document.createElement('p');
+            paragraph2.innerText="Cilli Red Semi Crepe Saree";
+            paragraph2.style.color='black'
+             paragraph2.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph2);
+
+         var paragraph3=document.createElement('p');
+            paragraph3.innerText=" ₹1,529.00, now ₹1,376.10";
+            paragraph3.style.fontWeight='bold'
+            paragraph3.style.color='black'
+             paragraph3.style.textAlign='center'
+            rectangleDivImgRateDiv.append(paragraph3);
+        
+    </script>
+</body>
+</html>
