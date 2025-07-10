@@ -533,157 +533,160 @@
 
         //JJDEJ
 
-        var rectangleMainDiv = document.createElement('div');
-        rectangleMainDiv.style.display = 'flex';
-        rectangleMainDiv.style.paddingTop = '30px'
-        rectangleMainDiv.style.justifyContent = 'center'
-        document.body.append(rectangleMainDiv);
+        var cardMainDiv = document.createElement('div');
+        cardMainDiv.style.display = 'flex';
+        cardMainDiv.style.paddingTop = '30px'
+        cardMainDiv.style.justifyContent = 'center'
+        document.body.append(cardMainDiv);
 
-        var rectangleDiv = document.createElement('div');
-        rectangleDiv.style.width = "85%";
-        rectangleDiv.style.display = 'flex';
-        rectangleDiv.style.gap = '20px'
+        var cardDiv = document.createElement('div');
+        cardDiv.style.width = "85%";
+        cardDiv.style.display = 'flex';
+        cardDiv.style.gap = '20px'
 
-        rectangleMainDiv.append(rectangleDiv);
+        cardMainDiv.append(cardDiv);
 
-        var rectangleDivImg = document.createElement('div');
-        rectangleDivImg.style.width = 'calc(100% / 4)';
-        rectangleDiv.append(rectangleDivImg);
+        var cardDivImg = document.createElement('div');
+        cardDivImg.style.width = 'calc(100% / 4)';
+        cardDivImg.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';
+        cardDiv.append(cardDivImg);
 
-        var rectangleDivImges = document.createElement('img');
-        rectangleDivImges.setAttribute('src', 'images/New folder/3.webp');
-        rectangleDivImges.style.width = '100%'
-        rectangleDivImges.style.height = '80%'
-        rectangleDivImg.append(rectangleDivImges);
+        var cardDivImges = document.createElement('img');
+        cardDivImges.setAttribute('src', 'images/New folder/3.webp');
+        cardDivImges.style.width = '100%'
+        cardDivImges.style.height = '80%'
+        cardDivImg.append(cardDivImges);
 
-        var rectangleDivImgRateDiv = document.createElement('div');
-        rectangleDivImgRateDiv.style.height = '20%'
-        rectangleDivImg.append(rectangleDivImgRateDiv);
-
-        var paragraph = document.createElement('p');
-        paragraph.innerText = "Crepe Saree";
-        paragraph.style.paddingTop = '15px'
-        paragraph.style.color = 'black'
-        paragraph.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph);
-
-        var paragraph2 = document.createElement('p');
-        paragraph2.innerText = "Cilli Red Semi Crepe Saree";
-        paragraph2.style.color = 'black'
-        paragraph2.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph2);
-
-        var paragraph3 = document.createElement('p');
-        paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
-        paragraph3.style.fontWeight = 'bold'
-        paragraph3.style.color = 'black'
-        paragraph3.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph3);
-
-        var rectangleDivImg = document.createElement('div');
-        rectangleDivImg.style.width = 'calc(100% / 4)';
-        rectangleDiv.append(rectangleDivImg);
-
-        var rectangleDivImges = document.createElement('img');
-        rectangleDivImges.setAttribute('src', 'images/New folder/4.webp');
-        rectangleDivImges.style.width = '100%'
-        rectangleDivImges.style.height = '80%'
-        rectangleDivImg.append(rectangleDivImges);
-
-        var rectangleDivImgRateDiv = document.createElement('div');
-        rectangleDivImgRateDiv.style.height = '20%'
-        rectangleDivImg.append(rectangleDivImgRateDiv);
+        var cardDivImgRateDiv = document.createElement('div');
+        cardDivImgRateDiv.style.height = '20%'
+        cardDivImg.append(cardDivImgRateDiv);
 
         var paragraph = document.createElement('p');
         paragraph.innerText = "Crepe Saree";
         paragraph.style.paddingTop = '15px'
         paragraph.style.color = 'black'
         paragraph.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph);
+        cardDivImgRateDiv.append(paragraph);
 
         var paragraph2 = document.createElement('p');
         paragraph2.innerText = "Cilli Red Semi Crepe Saree";
         paragraph2.style.color = 'black'
         paragraph2.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph2);
+        cardDivImgRateDiv.append(paragraph2);
 
         var paragraph3 = document.createElement('p');
         paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
         paragraph3.style.fontWeight = 'bold'
         paragraph3.style.color = 'black'
         paragraph3.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph3);
+        cardDivImgRateDiv.append(paragraph3);
+
+        var cardDivImg = document.createElement('div');
+        cardDivImg.style.width = 'calc(100% / 4)';
+        cardDivImg.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';
+        cardDiv.append(cardDivImg);
+
+        var cardDivImges = document.createElement('img');
+        cardDivImges.setAttribute('src', 'images/New folder/4.webp');
+        cardDivImges.style.width = '100%'
+        cardDivImges.style.height = '80%'
+        cardDivImg.append(cardDivImges);
+
+        var cardDivImgRateDiv = document.createElement('div');
+        cardDivImgRateDiv.style.height = '20%'
+        cardDivImg.append(cardDivImgRateDiv);
+
+        var paragraph = document.createElement('p');
+        paragraph.innerText = "Crepe Saree";
+        paragraph.style.paddingTop = '15px'
+        paragraph.style.color = 'black'
+        paragraph.style.textAlign = 'center'
+        cardDivImgRateDiv.append(paragraph);
+
+        var paragraph2 = document.createElement('p');
+        paragraph2.innerText = "Cilli Red Semi Crepe Saree";
+        paragraph2.style.color = 'black'
+        paragraph2.style.textAlign = 'center'
+        cardDivImgRateDiv.append(paragraph2);
+
+        var paragraph3 = document.createElement('p');
+        paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
+        paragraph3.style.fontWeight = 'bold'
+        paragraph3.style.color = 'black'
+        paragraph3.style.textAlign = 'center'
+        cardDivImgRateDiv.append(paragraph3);
 
         //
-        var rectangleDivImg = document.createElement('div');
-        rectangleDivImg.style.width = 'calc(100% / 4)';
-        rectangleDiv.append(rectangleDivImg);
+        var cardDivImg = document.createElement('div');
+        cardDivImg.style.width = 'calc(100% / 4)';
+        cardDivImg.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';
+        cardDiv.append(cardDivImg);
 
-        var rectangleDivImges = document.createElement('img');
-        rectangleDivImges.setAttribute('src', 'images/New folder/5.webp');
-        rectangleDivImges.style.width = '100%'
-        rectangleDivImges.style.height = '80%'
-        rectangleDivImg.append(rectangleDivImges);
+        var cardDivImges = document.createElement('img');
+        cardDivImges.setAttribute('src', 'images/New folder/5.webp');
+        cardDivImges.style.width = '100%'
+        cardDivImges.style.height = '80%'
+        cardDivImg.append(cardDivImges);
 
-        var rectangleDivImgRateDiv = document.createElement('div');
-        rectangleDivImgRateDiv.style.height = '20%'
-        rectangleDivImg.append(rectangleDivImgRateDiv);
+        var cardDivImgRateDiv = document.createElement('div');
+        cardDivImgRateDiv.style.height = '20%'
+        cardDivImg.append(cardDivImgRateDiv);
 
         var paragraph = document.createElement('p');
         paragraph.innerText = "Crepe Saree";
         paragraph.style.paddingTop = '15px'
         paragraph.style.color = 'black'
         paragraph.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph);
+        cardDivImgRateDiv.append(paragraph);
 
         var paragraph2 = document.createElement('p');
         paragraph2.innerText = "Cilli Red Semi Crepe Saree";
         paragraph2.style.color = 'black'
         paragraph2.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph2);
+        cardDivImgRateDiv.append(paragraph2);
 
         var paragraph3 = document.createElement('p');
         paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
         paragraph3.style.fontWeight = 'bold'
         paragraph3.style.color = 'black'
         paragraph3.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph3);
+        cardDivImgRateDiv.append(paragraph3);
 
         //
-        var rectangleDivImg = document.createElement('div');
-        rectangleDivImg.style.width = 'calc(100% / 4)';
+        var cardDivImg = document.createElement('div');
+        cardDivImg.style.width = 'calc(100% / 4)';
+        cardDivImg.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';
+        cardDiv.append(cardDivImg);
 
-        rectangleDiv.append(rectangleDivImg);
+        var cardDivImges = document.createElement('img');
+        cardDivImges.setAttribute('src', 'images/New folder/6.webp');
+        cardDivImges.style.width = '100%'
+        cardDivImges.style.height = '80%'
+        cardDivImg.append(cardDivImges);
 
-        var rectangleDivImges = document.createElement('img');
-        rectangleDivImges.setAttribute('src', 'images/New folder/6.webp');
-        rectangleDivImges.style.width = '100%'
-        rectangleDivImges.style.height = '80%'
-        rectangleDivImg.append(rectangleDivImges);
-
-        var rectangleDivImgRateDiv = document.createElement('div');
-        rectangleDivImgRateDiv.style.height = '20%'
-        rectangleDivImg.append(rectangleDivImgRateDiv);
+        var cardDivImgRateDiv = document.createElement('div');
+        cardDivImgRateDiv.style.height = '20%'
+        cardDivImg.append(cardDivImgRateDiv);
 
         var paragraph = document.createElement('p');
         paragraph.innerText = "Crepe Saree";
         paragraph.style.paddingTop = '15px'
         paragraph.style.color = 'black'
         paragraph.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph);
+        cardDivImgRateDiv.append(paragraph);
 
         var paragraph2 = document.createElement('p');
         paragraph2.innerText = "Cilli Red Semi Crepe Saree";
         paragraph2.style.color = 'black'
         paragraph2.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph2);
+        cardDivImgRateDiv.append(paragraph2);
 
         var paragraph3 = document.createElement('p');
         paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
         paragraph3.style.fontWeight = 'bold'
         paragraph3.style.color = 'black'
         paragraph3.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph3);
+        cardDivImgRateDiv.append(paragraph3);
 
         //next section
 
@@ -704,160 +707,163 @@
 
         //JJDEJ
 
-        var rectangleMainDiv = document.createElement('div');
-        rectangleMainDiv.style.display = 'flex';
-        rectangleMainDiv.style.paddingTop = '30px'
-        rectangleMainDiv.style.justifyContent = 'center'
-        document.body.append(rectangleMainDiv);
+        var cardMainDiv = document.createElement('div');
+        cardMainDiv.style.display = 'flex';
+        cardMainDiv.style.paddingTop = '30px'
+        cardMainDiv.style.justifyContent = 'center'
+        document.body.append(cardMainDiv);
 
-        var rectangleDiv = document.createElement('div');
-        rectangleDiv.style.width = "85%";
-        rectangleDiv.style.display = 'flex';
-        rectangleDiv.style.gap = '20px'
-        rectangleDiv.style.paddingBottom = '150px'
-        rectangleMainDiv.append(rectangleDiv);
+        var cardDiv = document.createElement('div');
+        cardDiv.style.width = "85%";
+        cardDiv.style.display = 'flex';
+        cardDiv.style.gap = '20px'
+        cardDiv.style.paddingBottom = '150px'
+        cardMainDiv.append(cardDiv);
 
-        var rectangleDivImg = document.createElement('div');
-        rectangleDivImg.style.width = 'calc(100% / 4)';
-        rectangleDiv.append(rectangleDivImg);
+        var cardDivImg = document.createElement('div');
+        cardDivImg.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';
+        cardDivImg.style.width = 'calc(100% / 4)';
+        cardDiv.append(cardDivImg);
 
-        var rectangleDivImges = document.createElement('img');
-        rectangleDivImges.setAttribute('src', 'images/New folder/9.webp');
-        rectangleDivImges.style.width = '100%'
-        rectangleDivImges.style.height = '80%'
-        rectangleDivImg.append(rectangleDivImges);
+        var cardDivImges = document.createElement('img');
+        cardDivImges.setAttribute('src', 'images/New folder/9.webp');
+        cardDivImges.style.width = '100%'
+        cardDivImges.style.height = '80%'
+        cardDivImg.append(cardDivImges);
 
-        var rectangleDivImgRateDiv = document.createElement('div');
-        rectangleDivImgRateDiv.style.height = '20%'
-        rectangleDivImg.append(rectangleDivImgRateDiv);
-
-        var paragraph = document.createElement('p');
-        paragraph.innerText = "Crepe Saree";
-        paragraph.style.paddingTop = '15px'
-        paragraph.style.color = 'black'
-        paragraph.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph);
-
-        var paragraph2 = document.createElement('p');
-        paragraph2.innerText = "Cilli Red Semi Crepe Saree";
-        paragraph2.style.color = 'black'
-        paragraph2.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph2);
-
-        var paragraph3 = document.createElement('p');
-        paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
-        paragraph3.style.fontWeight = 'bold'
-        paragraph3.style.color = 'black'
-        paragraph3.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph3);
-
-        var rectangleDivImg = document.createElement('div');
-        rectangleDivImg.style.width = 'calc(100% / 4)';
-        rectangleDiv.append(rectangleDivImg);
-
-        var rectangleDivImges = document.createElement('img');
-        rectangleDivImges.setAttribute('src', 'images/New folder/10.webp');
-        rectangleDivImges.style.width = '100%'
-        rectangleDivImges.style.height = '80%'
-        rectangleDivImg.append(rectangleDivImges);
-
-        var rectangleDivImgRateDiv = document.createElement('div');
-        rectangleDivImgRateDiv.style.height = '20%'
-        rectangleDivImg.append(rectangleDivImgRateDiv);
+        var cardDivImgRateDiv = document.createElement('div');
+        cardDivImgRateDiv.style.height = '20%'
+        cardDivImg.append(cardDivImgRateDiv);
 
         var paragraph = document.createElement('p');
         paragraph.innerText = "Crepe Saree";
         paragraph.style.paddingTop = '15px'
         paragraph.style.color = 'black'
         paragraph.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph);
+        cardDivImgRateDiv.append(paragraph);
 
         var paragraph2 = document.createElement('p');
         paragraph2.innerText = "Cilli Red Semi Crepe Saree";
         paragraph2.style.color = 'black'
         paragraph2.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph2);
+        cardDivImgRateDiv.append(paragraph2);
 
         var paragraph3 = document.createElement('p');
         paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
         paragraph3.style.fontWeight = 'bold'
         paragraph3.style.color = 'black'
         paragraph3.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph3);
+        cardDivImgRateDiv.append(paragraph3);
+
+        var cardDivImg = document.createElement('div');
+        cardDivImg.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';
+        cardDivImg.style.width = 'calc(100% / 4)';
+        cardDiv.append(cardDivImg);
+
+        var cardDivImges = document.createElement('img');
+        cardDivImges.setAttribute('src', 'images/New folder/10.webp');
+        cardDivImges.style.width = '100%'
+        cardDivImges.style.height = '80%'
+        cardDivImg.append(cardDivImges);
+
+        var cardDivImgRateDiv = document.createElement('div');
+        cardDivImgRateDiv.style.height = '20%'
+        cardDivImg.append(cardDivImgRateDiv);
+
+        var paragraph = document.createElement('p');
+        paragraph.innerText = "Crepe Saree";
+        paragraph.style.paddingTop = '15px'
+        paragraph.style.color = 'black'
+        paragraph.style.textAlign = 'center'
+        cardDivImgRateDiv.append(paragraph);
+
+        var paragraph2 = document.createElement('p');
+        paragraph2.innerText = "Cilli Red Semi Crepe Saree";
+        paragraph2.style.color = 'black'
+        paragraph2.style.textAlign = 'center'
+        cardDivImgRateDiv.append(paragraph2);
+
+        var paragraph3 = document.createElement('p');
+        paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
+        paragraph3.style.fontWeight = 'bold'
+        paragraph3.style.color = 'black'
+        paragraph3.style.textAlign = 'center'
+        cardDivImgRateDiv.append(paragraph3);
 
         //
-        var rectangleDivImg = document.createElement('div');
-        rectangleDivImg.style.width = 'calc(100% / 4)';
+        var cardDivImg = document.createElement('div');
+        cardDivImg.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';
+        cardDivImg.style.width = 'calc(100% / 4)';
 
-        rectangleDiv.append(rectangleDivImg);
+        cardDiv.append(cardDivImg);
 
-        var rectangleDivImges = document.createElement('img');
-        rectangleDivImges.setAttribute('src', 'images/New folder/8.jpg');
-        rectangleDivImges.style.width = '100%'
-        rectangleDivImges.style.height = '80%'
-        rectangleDivImg.append(rectangleDivImges);
+        var cardDivImges = document.createElement('img');
+        cardDivImges.setAttribute('src', 'images/New folder/8.jpg');
+        cardDivImges.style.width = '100%'
+        cardDivImges.style.height = '80%'
+        cardDivImg.append(cardDivImges);
 
-        var rectangleDivImgRateDiv = document.createElement('div');
-        rectangleDivImgRateDiv.style.height = '20%'
+        var cardDivImgRateDiv = document.createElement('div');
+        cardDivImgRateDiv.style.height = '20%'
 
-        rectangleDivImg.append(rectangleDivImgRateDiv);
+        cardDivImg.append(cardDivImgRateDiv);
 
         var paragraph = document.createElement('p');
         paragraph.innerText = "Crepe Saree";
         paragraph.style.paddingTop = '15px'
         paragraph.style.color = 'black'
         paragraph.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph);
+        cardDivImgRateDiv.append(paragraph);
 
         var paragraph2 = document.createElement('p');
         paragraph2.innerText = "Cilli Red Semi Crepe Saree";
         paragraph2.style.color = 'black'
         paragraph2.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph2);
+        cardDivImgRateDiv.append(paragraph2);
 
         var paragraph3 = document.createElement('p');
         paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
         paragraph3.style.fontWeight = 'bold'
         paragraph3.style.color = 'black'
         paragraph3.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph3);
+        cardDivImgRateDiv.append(paragraph3);
 
         //
-        var rectangleDivImg = document.createElement('div');
-        rectangleDivImg.style.width = 'calc(100% / 4)';
+        var cardDivImg = document.createElement('div');
+        cardDivImg.style.width = 'calc(100% / 4)';
+        cardDivImg.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)';
+        cardDiv.append(cardDivImg);
 
-        rectangleDiv.append(rectangleDivImg);
+        var cardDivImges = document.createElement('img');
+        cardDivImges.setAttribute('src', 'images/New folder/7.webp');
+        cardDivImges.style.width = '100%'
+        cardDivImges.style.height = '80%'
+        cardDivImg.append(cardDivImges);
 
-        var rectangleDivImges = document.createElement('img');
-        rectangleDivImges.setAttribute('src', 'images/New folder/7.webp');
-        rectangleDivImges.style.width = '100%'
-        rectangleDivImges.style.height = '80%'
-        rectangleDivImg.append(rectangleDivImges);
+        var cardDivImgRateDiv = document.createElement('div');
+        cardDivImgRateDiv.style.height = '20%'
 
-        var rectangleDivImgRateDiv = document.createElement('div');
-        rectangleDivImgRateDiv.style.height = '20%'
-
-        rectangleDivImg.append(rectangleDivImgRateDiv);
+        cardDivImg.append(cardDivImgRateDiv);
 
         var paragraph = document.createElement('p');
         paragraph.innerText = "Crepe Saree";
         paragraph.style.paddingTop = '15px'
         paragraph.style.color = 'black'
         paragraph.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph);
+        cardDivImgRateDiv.append(paragraph);
 
         var paragraph2 = document.createElement('p');
         paragraph2.innerText = "Cilli Red Semi Crepe Saree";
         paragraph2.style.color = 'black'
         paragraph2.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph2);
+        cardDivImgRateDiv.append(paragraph2);
 
         var paragraph3 = document.createElement('p');
         paragraph3.innerText = " ₹1,529.00, now ₹1,376.10";
         paragraph3.style.fontWeight = 'bold'
         paragraph3.style.color = 'black'
         paragraph3.style.textAlign = 'center'
-        rectangleDivImgRateDiv.append(paragraph3);
+        cardDivImgRateDiv.append(paragraph3);
 
         var blackDiv = document.createElement('div');
         blackDiv.style.backgroundColor = 'black';
